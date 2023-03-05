@@ -1,32 +1,26 @@
-Tests
+Pour exécuter les tests, vous pouvez utiliser un outil de construction comme Maven ou Gradle, ou les exécuter directement depuis votre IDE. Les tests utilisent JUnit 5, assurez-vous donc que les dépendances appropriées sont installées.
+
+Les tests : 
 isPlayable_shouldReturnFalseWhenNoPlayers()
-This test ensures that isPlayable returns false when there are no players in the game.
+Ce test garantit que isPlayable renvoie false lorsqu'il n'y a aucun joueur dans la partie.
 
 isPlayable_shouldReturnFalseWhenOnePlayer()
-This test ensures that isPlayable returns false when there is only one player in the game.
+Ce test garantit que isPlayable renvoie false lorsqu'il n'y a qu'un seul joueur dans la partie.
 
 isPlayable_shouldReturnTrueWhenTwoPlayers()
-This test ensures that isPlayable returns true when there are two players in the game.
+Ce test garantit que isPlayable renvoie true lorsqu'il y a deux joueurs dans la partie.
 
 addPlayer_shouldIncreaseNumPlayers()
-This test ensures that addPlayer increases the number of players in the game.
+Ce test garantit que addPlayer augmente le nombre de joueurs dans le jeu.
 
 addPlayer_shouldSetPlayerPositionAndScore()
-This test ensures that addPlayer sets the initial position and score for each player added to the game.
+Ce test garantit que addPlayer définit la position initiale et le score de chaque joueur ajouté au jeu.
 
 addPlayer_shouldSetPlayerInPenaltyBoxToFalse()
-This test ensures that addPlayer sets the playersInPenaltyBox flag to false for each player added to the game.
+Ce test garantit que addPlayer définit l'indicateur playersInPenaltyBox sur false pour chaque joueur ajouté au jeu.
 
 roll_shouldUpdatePlayerPosition()
-This test ensures that roll updates the player's position correctly based on the roll of the dice.
+Ce test garantit que le lancer met correctement à jour la position du joueur en fonction du lancer de dés.
 
 roll_shouldWrapAroundWhenPlayerPositionExceeds11()
-This test ensures that roll wraps the player's position around correctly when it exceeds 11.
-
-Contributing
-Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
-
-
-
-
-
+Ce test garantit que le roulis enveloppe correctement la position du joueur lorsqu'il dépasse 11.
